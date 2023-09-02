@@ -70,6 +70,7 @@
     <Compile Include="App.cs" />
     <Compile Include="Commands\ExternalCommands\ConnectElements.cs" />
     <Compile Include="Commands\ExternalCommands\Director.cs" />
+    <Compile Include="Commands\ExternalCommands\DisconnectElement.cs" />
     <Compile Include="Commands\Interface\BitmapSourceConverter.cs" />
     <Compile Include="Commands\Supporters\Helper.cs" />
     <Compile Include="Commands\Supporters\Language.cs" />

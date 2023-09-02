@@ -53,6 +53,10 @@ namespace bimtab
             PushButton pushButton2 = ribbonPanel.AddItem(buttonData2) as PushButton;
             pushButton2.LargeImage = BitmapSourceConverter.ConvertFromImage(Resources.logo1);
 
+            PushButtonData buttonData3 = new PushButtonData("btn3", "Disconnect\r\nElement", thisAssemblyPath, "bimtab.Commands.ExternalCommands.DisconnectElement");
+            PushButton pushButton3 = ribbonPanel.AddItem(buttonData3) as PushButton;
+            pushButton3.LargeImage = BitmapSourceConverter.ConvertFromImage(Resources.logo1);
+
             ColoriseTab(tabname, panelname, Color.FromRgb(255, 220, 70));
 
             return Result.Succeeded;
