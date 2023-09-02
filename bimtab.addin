@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Application</Name>
+    <Assembly>bimtab\bimtab.dll</Assembly>
+    <AddInId>776AE76E-D7C0-4D7B-A824-C26AD630EC66</AddInId>
+    <FullClassName>bimtab.App</FullClassName>
+    <Text>bimtab Plug-In</Text>
+    <Description>EASY SOLUTIONS FOR AUTODESK REVIT</Description>
+    <VendorId>aliriza yilmaz</VendorId>
+    <VendorDescription>@revit_api_developer</VendorDescription>
+    <VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+  </AddIn>
+</RevitAddIns>
