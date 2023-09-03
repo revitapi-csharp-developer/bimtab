@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Commands\Classes\RevitElement.cs" />
     <Compile Include="Commands\ExternalCommands\ConnectElements.cs" />
     <Compile Include="Commands\ExternalCommands\Director.cs" />
     <Compile Include="Commands\ExternalCommands\DisconnectElement.cs" />

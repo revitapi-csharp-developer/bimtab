@@ -1,11 +1,15 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using Autodesk.Private.Windows;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.UI;
 using Autodesk.Windows;
 using bimtab.Commands.Interface;
 using bimtab.Properties;
+using UIFramework;
 using adWin = Autodesk.Windows;
 
 namespace bimtab
@@ -49,6 +53,8 @@ namespace bimtab
             PushButton pushButton1 = ribbonPanel.AddItem(buttonData1) as PushButton;
             pushButton1.LargeImage = BitmapSourceConverter.ConvertFromImage(Resources.logo1);
 
+            ribbonPanel.AddSeparator();
+
             PushButtonData buttonData2 = new PushButtonData("btn2", "Connect\r\nElements", thisAssemblyPath, "bimtab.Commands.ExternalCommands.ConnectElements");
             PushButton pushButton2 = ribbonPanel.AddItem(buttonData2) as PushButton;
             pushButton2.LargeImage = BitmapSourceConverter.ConvertFromImage(Resources.logo1);
@@ -56,6 +62,26 @@ namespace bimtab
             PushButtonData buttonData3 = new PushButtonData("btn3", "Disconnect\r\nElement", thisAssemblyPath, "bimtab.Commands.ExternalCommands.DisconnectElement");
             PushButton pushButton3 = ribbonPanel.AddItem(buttonData3) as PushButton;
             pushButton3.LargeImage = BitmapSourceConverter.ConvertFromImage(Resources.logo1);
+
+            ribbonPanel.AddSeparator();
+
+            PushButtonData buttonData4 = new PushButtonData("btn4", "Test1", thisAssemblyPath, "bimtab.Commands.ExternalCommands.DisconnectElement");
+            buttonData4.LargeImage = BitmapSourceConverter.ConvertFromImage(Resources.logo1);
+
+            PushButtonData buttonData5 = new PushButtonData("btn5", "Test2", thisAssemblyPath, "bimtab.Commands.ExternalCommands.DisconnectElement");
+            buttonData5.LargeImage = BitmapSourceConverter.ConvertFromImage(Resources.logo1);
+
+            PushButtonData buttonData6 = new PushButtonData("btn6", "Test3", thisAssemblyPath, "bimtab.Commands.ExternalCommands.DisconnectElement");
+            buttonData6.LargeImage = BitmapSourceConverter.ConvertFromImage(Resources.logo1);
+
+            //SplitButtonData splitBtnData = new SplitButtonData("SplitButton", "Test Buttons");
+            //SplitButton splitBtn = ribbonPanel.AddItem(splitBtnData) as SplitButton;
+
+            //splitBtn.AddPushButton(buttonData4);
+            //splitBtn.AddPushButton(buttonData5);
+            //splitBtn.AddPushButton(buttonData6);
+
+            ribbonPanel.AddSeparator();
 
             ColoriseTab(tabname, panelname, Color.FromRgb(255, 220, 70));
 
